@@ -9,6 +9,7 @@ Instruções para utilização:
 
 - Efetue o Download do mintclean.sh
 - Dê permissionamento de excução com o seguinte commando através do terminal: chmod 777 mintclean.sh
+
 Pronto, feito isso você já pode executar o script.
 
 Algumas informações sobre o Script:
