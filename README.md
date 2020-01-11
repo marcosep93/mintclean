@@ -1,0 +1,2 @@
+# mintclean
+OBS: LEIA ESTE ARQUIVO ANTES DE USA-LO!
