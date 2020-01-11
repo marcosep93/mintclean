@@ -5,6 +5,12 @@ Objetivo: Este Script tem como intenção ser usado em novas instalações do Li
 
 Motivação: Cansado de ter que configurar o sistema operacional do zero todas as vezes que formatava o computador, resolvi desenvolver esse simple script para fazer esse trabalho chato.
 
+Instruções para utilização:
+
+- Efetue o Download do mintclean.sh
+- Dê permissionamento de excução com o seguinte commando através do terminal: chmod 777 mintclean.sh
+Pronto, feito isso você já pode executar o script.
+
 Algumas informações sobre o Script:
 
 Pacotes a serem removidos:
@@ -43,9 +49,3 @@ Bibliotecas do Python:
   - PyautoGui
   - Xlrd
   - PyperClip
-
-#Instruções para utilização:
-
-1 - Efetue o Download do mintclean.sh
-2 - Dê permissionamento de excução com o seguinte commando através do terminal: chmod 777 mintclean.sh
-Pronto, feito isso você já pode executar o script.
