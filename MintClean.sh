@@ -53,7 +53,7 @@ function menu () {
     setterm -foreground green
     echo "|               |"
     setterm -foreground red
-    echo "|  @marcosep93  |"
+    echo "|  @mvsep93     |"
     echo "|               |"
     setterm -foreground green
     echo "╚═══════════════╝"
