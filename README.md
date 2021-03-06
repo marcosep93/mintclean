@@ -3,7 +3,7 @@ LEIA!
 
 Objetivo: Este Script tem como intenção ser usado em novas instalações do Linux mint, minimizando assim o trabalho para remover instalar e atualizar pacotes em uma nova instalação do sistema operacional.
 
-Motivação: Cansado de ter que configurar o sistema operacional do zero todas as vezes que formatava o computador, resolvi desenvolver esse simple script para fazer esse trabalho chato.
+Motivação: Cansado de configurar o sistema operacional do zero todas as vezes que formatava o computador, resolvi desenvolver esse script para automatizar esse trabalho chato.
 
 Instruções para utilização:
 
@@ -13,9 +13,9 @@ Instruções para utilização:
 
 Pronto, feito isso você já pode aproveitar o Script :)
 
-Algumas informações sobre o Script:
+Informações sobre o Script:
 
-Pacotes a serem removidos:
+Pacotes removidos:
   - hexchat
   - gnote
   - pix
@@ -35,7 +35,7 @@ Pacotes a serem removidos:
   - system-config-printer
   - blueberry
 
-Pacotes a serem instalados:
+Pacotes (programas) instalados:
   - GIT
   - sublimetext
   - whatsapp-desktop
