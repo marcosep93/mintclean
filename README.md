@@ -35,10 +35,10 @@ Pacotes a serem removidos:
   - blueberry
 
 Pacotes a serem instalados:
-  - VLC
+  - GIT
   - sublimetext
   - whatsapp-desktop
-  - python
+  - python3
   - python-pip
   - timeshift
   - Chrome
