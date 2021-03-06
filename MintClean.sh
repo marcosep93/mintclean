@@ -1,9 +1,10 @@
 #!/bin/bash
 
-#Marcos Menezes
+#Marcos Menezes Twitter: @mvsep93
 #Script remover, instalar, atualizar e limpar 
 #1.0
-#11/01/2020
+#Criado: 11/01/2020
+#Atualizado: 06/03/2021
 
 clear
 
@@ -120,17 +121,21 @@ removeProgramas() {
 
 installProgramas () {
     clear
-    echo "Será instalado: VLC, SublimeText, Whatsapp, Python, TimeShift e Chrome."
+    echo "Será instalado: Git, SublimeText, Whatsapp, Python, TimeShift e Chrome."
     echo ""
     echo "Iniciando Script..."
     echo ""
     sleep 3
 
-    sudo apt install vlc -y
+    sudo apt install git -y
     sudo apt install sublime-text -y
     sudo apt install whatsapp-desktop -y
-    sudo apt install python -y
-    sudo apt install python-pip -y
+    sudo apt install python3 -y
+    sudo apt install python3-pip -y
+    sudo add-apt-repository universe -y
+    sudo apt update
+    sudo apt install python2 -y
+    sudo apt update
     sudo apt install timeshift -y
     #Chrome:
     wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -152,8 +157,15 @@ libsPython() {
     echo ""
     sleep 3
 
-    sudo apt install python -y
-    sudo apt install python-pip -y
+    sudo apt install python3 -y
+    sudo apt install python3-pip -y
+    sudo add-apt-repository universe -y
+    sudo apt update
+    sudo apt install python2 -y
+    sudo apt update
+    curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+    sudo python3 get-pip.py
+    
     pip install selenium
     pip install setuptools
     pip install pandas
