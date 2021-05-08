@@ -1,4 +1,0 @@
-UPDATES:
-
-#06/03/2021:
-- Corrigido problema para instalar o python-pip na versão 20 do Mint.
