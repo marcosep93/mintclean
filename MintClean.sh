@@ -4,7 +4,7 @@
 #Script remover, instalar, atualizar e limpar 
 #1.0
 #Criado: 11/01/2020
-#Atualizado: 06/03/2021
+#Atualizado: 08/05/2021
 
 clear
 
@@ -93,21 +93,18 @@ removeProgramas() {
 
     sudo apt remove hexchat -y
     sudo apt remove gnote -y
+    sudo apt remove gnote-calendar -y
     sudo apt remove pix -y
     sudo apt remove drawing -y
     sudo apt remove libreoffice-base -y
     sudo apt remove libreoffice-draw -y
-    sudo apt remove libreoffice-base -y
-    sudo apt remove libreoffice-impress -y
     sudo apt remove libreoffice-math -y
-    sudo apt remove libreoffice-base -y
     sudo apt remove simple-scan -y
     sudo apt remove thunderbird -y
-    sudo apt remove firefox -y
     sudo apt remove celluloid -y
-    sudo apt remove gnome-power-manager -y
     sudo apt remove mintbackup -y
     sudo apt remove system-config-printer -y
+    sudo apt remove system-config-printer-gnome -y
     sudo apt remove blueberry -y
     sudo apt remove cinnamon-settings universal-access -y
     sudo apt-get autoremove -y
@@ -128,20 +125,15 @@ installProgramas () {
     sleep 3
 
     sudo apt install git -y
+    sudo apt install vlc -y
     sudo apt install sublime-text -y
     sudo apt install whatsapp-desktop -y
     sudo apt install python3 -y
     sudo apt install python3-pip -y
-    sudo add-apt-repository universe -y
     sudo apt update
     sudo apt install python2 -y
     sudo apt update
     sudo apt install timeshift -y
-    #Chrome:
-    wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-    sudo apt update
-    sudo apt install -y google-chrome-stable
 
     sleep 2
 
