@@ -7,7 +7,6 @@ Motivação: Cansado de configurar o sistema operacional do zero todas as vezes 
 
 Instruções para utilização:
 
-- sudo su curl https://github.com/marcosep93/mintclean/blob/master/MintClean.sh --output mintclean.sh
 - sudo su chmod 777 mintclean.sh
 - sudo su ./mintclean.sh
 
