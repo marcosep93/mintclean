@@ -24,7 +24,6 @@ Pacotes removidos:
   - libreoffice-math
   - simple-scan
   - thunderbird
-  - firefox
   - celluloid
   - gnome-power-manager
   - mintbackup
