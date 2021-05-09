@@ -4,7 +4,7 @@
 #Script remover, instalar, atualizar e limpar 
 #1.0
 #Criado: 11/01/2020
-#Atualizado: 08/05/2021
+#Atualizado: 09/05/2021
 
 clear
 
@@ -41,7 +41,7 @@ function menu () {
     setterm -foreground white
     echo "                         LOADING..."
 
-    sleep 5
+    sleep 3
 
     clear
 
@@ -61,36 +61,32 @@ function menu () {
     setterm -foreground white
     echo ""
     setterm -foreground yellow
-    users
+
     setterm -foreground white
-    echo "Diga o que tu queres?"
+    echo "Digite opcao:"
     echo ""
-    echo "Opção 1: Remover Programas"
-    echo "Opção 2: Instalar Programas"
-    echo "Opção 3: Bibliotecas Python"
-    echo "Opção 4: Limpeza"
-    echo "Opção 5: Personalizar"
-    echo "Opção 6: Sair"
+    echo "Opção 1: CONFIG. PESSOAL"
+    echo "Opção 2: CONFIG. SERVIDOR"
+    echo "Opção 3: Sair"
     echo ""
     read opcao
 
     case $opcao in
-    1) removeProgramas ;;
+    1) pessoal ;;
     2) installProgramas ;;
-    3) libsPython ;;
-    4) limpeza ;;
-    5) personalizar ;;
-    6) exit ;;
+    3) exit ;;
     *) "Opcao desconhecida." ;;
     esac
 }
 
-removeProgramas() {
+pessoal() {
     clear
     echo "Iniciando Script..."
     echo ""
     sleep 3
 
+    #Remove
+    echo "Removendo Programas..."
     sudo apt remove hexchat -y
     sudo apt remove gnote -y
     sudo apt remove gnote-calendar -y
@@ -109,48 +105,26 @@ removeProgramas() {
     sudo apt remove cinnamon-settings universal-access -y
     sudo apt-get autoremove -y
 
-    sleep 2
-
     clear
-    limpeza
-    menu
-}
 
-installProgramas () {
-    clear
-    echo "Será instalado: Git, SublimeText, Whatsapp, Python, TimeShift e Chrome."
-    echo ""
-    echo "Iniciando Script..."
-    echo ""
-    sleep 3
-
+	echo "Instalando Programas..."
+    #Instala Programas
     sudo apt install git -y
     sudo apt install vlc -y
     sudo apt install sublime-text -y
     sudo apt install whatsapp-desktop -y
     sudo apt install python3 -y
     sudo apt install python3-pip -y
+    sudo apt install python-pip -y
     sudo apt update
     sudo apt install python2 -y
     sudo apt update
     sudo apt install timeshift -y
 
-    sleep 2
-
     clear
-    menu
-}
 
-libsPython() {
-    clear
-    echo "Será instalado: Selenium, SetupTools, Pandas, PyautoGui, Xlrd e Pyperclip."
-    echo ""
-    echo "Iniciando Script..."
-    echo ""
-    sleep 3
-
-    sudo apt install python3 -y
-    sudo apt install python3-pip -y
+	echo "Instalando Lib Python..."
+    #Lib python
     sudo add-apt-repository universe -y
     sudo apt update
     sudo apt install python2 -y
@@ -164,39 +138,21 @@ libsPython() {
     pip install pyautogui
     pip install xlrd
     pip install pyperclip
+    pip install requests
+    pip install BeautifulSoup4
+
+    clear
+
+	echo "Configurando Sistema..."
+    #Config
+    ufw enable
 
     sleep 2
 
     clear
+    limpeza
     menu
 }
-
-limpeza () {
-    clear
-    echo "Iniciando Script..."
-    echo ""
-    sleep 3
-
-    sudo apt-get autoremove -y
-
-    sleep 2
-
-    clear
-    menu    
-}
-
-personalizar() {
-    clear
-    echo "Iniciando Script..."
-    echo ""
-    sleep 3
-
-    
-
-    clear
-    menu
-}
-
 #x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.
 
 menu
